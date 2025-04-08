@@ -183,8 +183,8 @@ console.log(getInactiveUsers(users));
 
 // task 5
 
-const getUserWithEmail = (users, gmail) => {
-  return users.find(({ email }) => email === gmail);
+const getUserWithEmail = (users, email) => {
+  return users.find(({ email: userEmail }) => userEmail === email);
 };
 
 console.log(getUserWithEmail(users, "shereeanthony@kog.com"));
